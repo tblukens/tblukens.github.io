@@ -81,7 +81,7 @@ $(".list-group-item:odd").addClass("list-group-item-secondary");
 
 
 
-$("#about, .contact-social").each(function() {
+$("#about, .contact-social, .project-image").each(function() {
 
   $(this).hide();
 
@@ -89,7 +89,7 @@ $("#about, .contact-social").each(function() {
 
 
 
-$('#about, .contact-social').each(function(i) {
+$('#about, .contact-social, .project-image').each(function(i) {
 
    delay =(i)*550;
 

@@ -88,15 +88,33 @@ h1#jumboName {
 
   background-image:  url('../img/coming-soon.png');
 
-  background-repeat:no-repeat;
+  background-repeat:repeat-x;
 
-  background-size:contain;
+  background-size:auto;
 
   background-position:center;
 
   box-shadow: -3px 3px 3px 0 rgba(255, 76, 0, .45), 3px -3px 3px 0 rgba(255, 76, 0, .45);
 
   margin-bottom: 20px;
+
+  border: 1px solid black;
+
+}
+
+.project-image{
+
+  background-color: #a9a9a9;
+
+  background-image:  url('../img/coming-soon.png');
+
+  background-repeat:no-repeat;
+
+  background-size:contain;
+
+  background-position:center;
+
+  /* box-shadow: -3px 3px 3px 0 rgba(255, 76, 0, .45), 3px -3px 3px 0 rgba(255, 76, 0, .45); */
 
   border: 1px solid black;
 
@@ -148,6 +166,10 @@ background-color: #9f9f9f;
 
 }
 
-img.card-img-top {
+img.card-img-top,div.card-img-top {
   height: 160px;
 }
+
+/* img.card-img-top.project-image {
+  max-height: 80px;
+} */
