@@ -173,3 +173,11 @@ img.card-img-top,div.card-img-top {
 /* img.card-img-top.project-image {
   max-height: 80px;
 } */
+
+p.small {
+  margin-bottom: 5px;
+  font-size: 0.75em;
+}
+.btn-sm{
+  margin-top: 5px;
+}

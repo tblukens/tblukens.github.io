@@ -47,6 +47,7 @@ var currentLanguages = [
 
 var learningLanguages = [
   'JavaScript, always more to learn',
+  'APIs & AJAX',
   'Node.js',
   'SQL',
   'MongoDB',
