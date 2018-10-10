@@ -101,7 +101,7 @@ $(document).ready(function () {
         '<p class="card-text">'+madeWith+'</p>'+
         '<p class="small">Click above to try it out. Or below for github repo:</p>'+
         '<p class="small text-center"><a class="btn btn-sm btn-secondary border border-dark"'+
-           'href="https://github.com/tblukens/'+github+'" role="button">Link to the GitHub</a></p>'+
+           'href="https://github.com/tblukens/'+github+'" role="button" target="_blank">Link to the GitHub</a></p>'+
       '</div>'+
     '</div>'+
   '</div>');
