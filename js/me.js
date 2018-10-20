@@ -14,6 +14,7 @@ var learningLanguages = [
   'SQL',
   'MongoDB',
   'React',
+  'Vue'
 ];
 
 
@@ -109,7 +110,7 @@ $(document).ready(function () {
     if (webApp === false) {
       gitHubUrl = gitHubRepo;
     }
-    var $addProject = ('<div id="project'+i+'"+ class="col-md-6 col-lg-4">'+
+    var $addProject = ('<div id="project'+i+'"+ class="col-md-6 col-lg-4 portfolio-project">'+
     '<div class="card mb-3 border border-dark">'+
       '<a href='+gitHubUrl+' target="_blank">'+
         '<img class="card-img-top project-image" src="'+img+'" alt="'+name+'" />'+
@@ -132,7 +133,7 @@ $(document).ready(function () {
 
 
 
-$("#about, .contact-social, .project-image").each(function () {
+$("#home, .jumbotron, #about, #portfolioContainer, .contact-social, .project-image, .socialContainer, .footerContainer").each(function () {
 
   $(this).hide();
 
@@ -140,9 +141,9 @@ $("#about, .contact-social, .project-image").each(function () {
 
 
 
-$('#about, .contact-social, .project-image').each(function (i) {
+$('#home, .jumbotron, #about, #portfolioContainer, .contact-social, .project-image, .socialContainer, .footerContainer').each(function (i) {
 
-  delay = (i) * 550;
+  delay = (i) * 650;
 
   $(this).delay(delay).animate({
 
@@ -150,7 +151,7 @@ $('#about, .contact-social, .project-image').each(function (i) {
 
   }, {
 
-      duration: 1500,
+      duration: 1000,
 
     });
 

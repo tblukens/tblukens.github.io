@@ -52,10 +52,10 @@
   <!-- /Jumbotron -->
 
   <!--about-->
-  <div class="container pt-4">
+  <div class="container pt-0">
     <div id="about" class="row">
       <div class="col-lg order-lg-2">
-        <h3 class="mb-4">About Me</h3>
+        <h3 class="mb-3 mt-4">About Me</h3>
 
         <p>
           My name is Tim Lukens. I have always enjoyed computers and learning new things. I enjoy using Google very
@@ -77,14 +77,14 @@
         </p>
       </div>
       <div class="col-lg order-lg-1">
-        <h3 class="mb-4">Current Skills:</h3>
+        <h3 class="mb-3 mt-4">Current Skills:</h3>
         <div class="list-group">
           <ul class="list-group" id="currentLanguages">
           </ul>
         </div>
       </div>
       <div class="col-lg order-lg-3">
-        <h3 class="mb-4">Learning Skills:</h3>
+        <h3 class="mb-3 mt-4">Learning Skills:</h3>
         <div class="list-group">
           <ul class="list-group" id="learningLanguages">
           </ul>
@@ -95,7 +95,7 @@
   <!--/about-->
 
   <!-- Portfolio -->
-  <div class="container pt-1">
+  <div id="portfolioContainer" class="container pt-1">
     <h1 id="portfolio" class="display-4 text-center my-5 text-muted">Portfolio</h1>
     <div id="projectContainer" class="row">
     </div>
@@ -103,13 +103,19 @@
   <!-- /Portfolio -->
 
   <!-- Social and Contact -->
-  <h1 id="contact" class="display-4 text-center my-5 text-muted">Social and Contact</h1>
 
-  <div class="container pt-1 border border-secondary">
+  <div class="container socialContainer pt-1 text-center mt-2 mb-4">
+  <h1 id="contact" class="display-4 text-center text-muted">Social and Contact</h1>
     <div id="contact-social" class="row">
       <div class="col-lg">
-        <h3><i class="fa fa-envelope" aria-hidden="true"></i> Email: <a href="mailto:tblukens87@gmail.com" target="_top">tblukens87@gmail.com</a></h3>
-        <p>See below for social media links.</p>
+        <h3><a href="mailto:tblukens87@gmail.com" class="btn btn-social" target="_top"><i class="fa fa-envelope"
+              aria-hidden="true"></i> Email</a>
+          <a href="https://github.com/tblukens" class="btn btn-social" target="_blank"><i class="fa fa-github"></i>
+            Github</a>
+          <a href="https://twitter.com/Shaztimwind" class="btn btn-social" target="_blank"><i class="fa fa-twitter"></i>
+            Twitter</a>
+          <a href="https://www.linkedin.com/in/tim-lukens-636a76154/" class="btn btn-social" target="_blank"><i class="fa fa-linkedin"></i>
+            Linkedin</a></h3>
       </div>
     </div>
   </div>
@@ -119,20 +125,14 @@
 
   <!-- footer -->
 
-  <div class="container pt-1">
+  <div class="container footerContainer pt-1">
     <div class="row py-1 footer">
-      <div class="col-md-7">
+      <!-- <div class="col-md-7">
         <div class="btn-group d-flex align-items-stretch align-self-md-stretch" role="group">
-          <a href="https://github.com/tblukens" class="btn btn-social align-self-md-stretch" target="_blank">
-            <i class="fa fa-github"></i> Github</a>
-          <a href="https://twitter.com/Shaztimwind" class="btn btn-social align-self-md-stretch" target="_blank">
-            <i class="fa fa-twitter"></i> Twitter</a>
-          <a href="https://www.linkedin.com/in/tim-lukens-636a76154/" class="btn btn-social align-self-md-stretch"
-            target="_blank">
-            <i class="fa fa-linkedin"></i> Linkedin</a>
+
         </div>
-      </div>
-      <div class="col-md text-md-right align-self-md-stretch">
+      </div> -->
+      <div class="col-md text-right align-self-md-stretch">
         <small>&copy; 2018 Tim Lukens</small>
       </div>
     </div>
