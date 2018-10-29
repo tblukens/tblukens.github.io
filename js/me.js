@@ -112,33 +112,32 @@ $(document).ready(function () {
     },
   ]
 
-  projects.forEach(function(element,i) {
+  projects.forEach(function (element, i) {
 
     displayProjects(element.name, element.gitHub, element.imgLink, element.madeWith, element.webApp, i)
   });
 
   function displayProjects(name, github, img, madeWith, webApp, i) {
-    i=i+1;
-    let gitHubUrl = "https://timlukens.com/"+github+"/"
-    let gitHubRepo = "https://github.com/tblukens/"+github+"/"
+    i = i + 1;
+    let gitHubUrl = `https://timlukens.com/${github}/`
+    let gitHubRepo = `https://github.com/tblukens/${github}/`
     if (webApp === false) {
       gitHubUrl = gitHubRepo;
     }
-    var $addProject = ('<div id="project'+i+'"+ class="col-md-6 col-lg-4 portfolio-project">'+
-    '<div class="card mb-3 border border-dark">'+
-      '<a href='+gitHubUrl+' target="_blank">'+
-        '<img class="card-img-top project-image" src="'+img+'" alt="'+name+'" />'+
-      '</a>'+
-      '<div class="card-body p-2 border border-dark border-bottom-0 border-left-0 border-right-0">'+
-        '<h4 class="card-title"><a href='+gitHubUrl+' target="_blank">'+name+'</a></h4>'+
-        '<p class="card-text">'+madeWith+'</p>'+
-        '<p class="small">Click above to try it out. Or below for github repo:</p>'+
-        '<p class="small text-center"><a class="btn btn-sm btn-secondary border border-dark"'+
-           'href='+gitHubRepo+' role="button" target="_blank">Link to the GitHub</a></p>'+
-      '</div>'+
-    '</div>'+
-  '</div>');
-  $("#projectContainer").append($addProject)
+    var $addProject = (`<div id="project${i}"+ class="col-md-6 col-lg-4 portfolio-project">
+      <div class="card mb-3 border border-dark">
+      <a href="${gitHubUrl}" target="_blank">
+      <img class="card-img-top project-image" src="${img}" alt="${name}" />
+      </a>
+      <div class="card-body p-2 border border-dark border-bottom-0 border-left-0 border-right-0">
+      <h4 class="card-title"><a href="${gitHubUrl}" target="_blank">${name}</a></h4>
+      <p class="card-text">${madeWith}</p>
+      <p class="small">Click above to try it out. Or below for github repo:</p>
+      <p class="small text-center"><a class="btn btn-sm btn-secondary border border-dark" href="${gitHubRepo}" role="button" target="_blank">Link to the GitHub</a></p>
+      </div>
+      </div>
+      </div>`);
+    $("#projectContainer").append($addProject)
   }
 
 
