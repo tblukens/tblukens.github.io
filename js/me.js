@@ -90,10 +90,24 @@ $(document).ready(function () {
       webApp: false,
     },
     {
-      name: "Word Guess Game using Node",
+      name: "Word Guess Game - Node",
       gitHub: "node_word_guess_game",
       imgLink: "./img/node_word_guess_game.png",
       madeWith: "JavaScript, Node.js, and node modules.",
+      webApp: false,
+    },
+    {
+      name: "Bamazon Store - Node/MySQL",
+      gitHub: "bamazon_node_mysql",
+      imgLink: "./img/bamazon.png",
+      madeWith: "JavaScript, Node.js, MySQL",
+      webApp: false,
+    },
+    {
+      name: "Node Bank App - Node/MySQL",
+      gitHub: "bank_of_node",
+      imgLink: "./img/bank_of_node.png",
+      madeWith: "JavaScript, Node.js, MySQL",
       webApp: false,
     },
   ]
