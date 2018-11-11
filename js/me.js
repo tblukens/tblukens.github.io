@@ -117,6 +117,14 @@ $(document).ready(function () {
       madeWith: "Vue, Node, Express",
       webApp: 'heroku',
       herokuLink: "https://tbl-friend-finder.herokuapp.com/"
+    },
+    {
+      name: "Eat Da Burger",
+      gitHub: "burger",
+      imgLink: "./img/eat_da_burger.png",
+      madeWith: "Vue, Node, Express, MySQL",
+      webApp: 'heroku',
+      herokuLink: "http://tbl-burger.herokuapp.com/"
     }
   ]
 
