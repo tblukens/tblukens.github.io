@@ -21,14 +21,17 @@ $(document).ready(function () {
   listGroup(learningLanguages, "#learningLanguages");
 
   projects.forEach(function (element, i) {
-    console.log(element.herokuLink)
-    displayProjects(element.name, element.gitHub, element.imgLink, element.madeWith, element.webApp, element.herokuLink, i)
+    // console.log(element.herokuLink)
+    displayProjects(element.name, element.gitHub, element.imgLink, element.madeWith, element.webApp, element.herokuLink, element.shortDescription, i)
   });
 
-  function displayProjects(name, github, img, madeWith, webApp, herokuLink, i) {
+  function displayProjects(name, github, img, madeWith, webApp, herokuLink, shortDescription, i) {
     i = i + 1;
     let gitHubUrl = `https://timlukens.com/${github}/`
-    let gitHubRepo = `https://github.com/tblukens/${github}/`
+    let gitHubRepo = github;
+    if (github.substring(0,4) !== "http"){
+      gitHubRepo = `https://github.com/tblukens/${github}/`
+    }
     let clickToTry = `<p class="small">Click above to try it out. Or below for github repo:</p>`;
     if (webApp === 'heroku') {
       gitHubUrl = herokuLink
@@ -43,9 +46,15 @@ $(document).ready(function () {
       </a>
       <div class="card-body p-2 border border-dark border-bottom-0 border-left-0 border-right-0">
       <h4 class="card-title"><a href="${gitHubUrl}" target="_blank">${name}</a></h4>
-      <p class="card-text">${madeWith}</p>
+      <p class="card-text">
+      ${shortDescription}
+      </p>
+      <p class="small text-center">
+      ${madeWith}
       ${clickToTry}
-      <p class="small text-center"><a class="btn btn-sm btn-secondary border border-dark" 
+      </p>
+      <p class="small text-center">
+      <a class="btn btn-sm btn-secondary border border-dark" 
       href="${gitHubRepo}" role="button" target="_blank">Link to the GitHub</a></p>
       </div>
       </div>
