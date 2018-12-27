@@ -68,26 +68,26 @@ $(document).ready(function () {
 
 
 
-$("#home, .jumbotron, #about, #portfolioContainer, .contact-social, .project-image, .socialContainer, .footerContainer").each(function () {
+// $("#home, .jumbotron, #about, #portfolioContainer, .contact-social, .project-image, .socialContainer, .footerContainer").each(function () {
 
-  $(this).hide();
+//   $(this).hide();
 
-});
+// });
 
 
 
-$('#home, .jumbotron, #about, #portfolioContainer, .contact-social, .project-image, .socialContainer, .footerContainer').each(function (i) {
+// $('#home, .jumbotron, #about, #portfolioContainer, .contact-social, .project-image, .socialContainer, .footerContainer').each(function (i) {
 
-  delay = (i) * 650;
+//   delay = (i) * 650;
 
-  $(this).delay(delay).animate({
+//   $(this).delay(delay).animate({
 
-    height: 'toggle'
+//     height: 'toggle'
 
-  }, {
+//   }, {
 
-      duration: 1000,
+//       duration: 1000,
 
-    });
+//     });
 
-});
+// });
