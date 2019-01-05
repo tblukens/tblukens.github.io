@@ -1,144 +1,201 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tim Lukens</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+      integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+      crossorigin="anonymous"
+    />
+    <!-- favored google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <!-- my css -->
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Tim Lukens</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/normalize.css" type="text/css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
-    crossorigin="anonymous">
-  <!-- favored google font -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <!-- my css -->
-  <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
-</head>
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="120">
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark border border-info border-top-0 border-left-0 border-right-0 fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand order-1 mr-0" href="#">Tim Lukens</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#home"
+              >Home <span class="sr-only">(current)</span>
+            </a>
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--/navbar-->
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid text-white">
+      <div class="container text-sm-center pt-5">
+        <h1 class="display-2" id="jumboName">Tim Lukens</h1>
+        <p class="lead font-weight-bold">
+          A site about myself and my projects.
+        </p>
+      </div>
+    </div>
+    <!-- /Jumbotron -->
 
-<body id="home" data-spy="scroll" data-target=".navbar" data-offset="120">
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark border border-info border-top-0 border-left-0 border-right-0 fixed-top">
-    <div class="container">
-      <a class="navbar-brand order-1 mr-0" href="#">Tim Lukens</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#home">Home
-            <span class="sr-only">(current)</span>
-          </a>
-          <a class="nav-item nav-link" href="#about">About</a>
-          <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-          <a class="nav-item nav-link" href="#contact">Contact</a>
+    <!--about-->
+    <div class="container pt-0">
+      <div id="about" class="row">
+        <div class="col-lg order-lg-2">
+          <h3 class="mb-3 mt-4">About Me</h3>
+
+          <p>
+            My name is Tim Lukens. I am a Full Stack Javascript Developer with a
+            passion for mobile responsive web design, APIs, and databases.
+          </p>
+          <p>
+            I am always learning and enjoy finding answers to problems. I am a
+            strong problem solver, and a hard worker.
+          </p>
+          <p>
+            Please enjoy my portfolio. There are plenty more projects and ideas
+            soon to come!
+          </p>
+        </div>
+        <div class="col-lg order-lg-1">
+          <h3 class="mb-3 mt-4">Current Skills:</h3>
+          <div class="list-group">
+            <ul class="list-group" id="currentLanguages"></ul>
+          </div>
+        </div>
+        <div class="col-lg order-lg-3">
+          <h3 class="mb-3 mt-4">Learning Skills:</h3>
+          <div class="list-group">
+            <ul class="list-group" id="learningLanguages"></ul>
+          </div>
         </div>
       </div>
     </div>
-  </nav>
-  <!--/navbar-->
-  <!-- Jumbotron -->
-  <div class="jumbotron jumbotron-fluid text-white">
-    <div class="container text-sm-center pt-5">
-      <h1 class="display-2" id="jumboName">Tim Lukens</h1>
-      <p class="lead font-weight-bold">A site about myself and my projects.</p>
+    <!--/about-->
+
+    <!-- Portfolio -->
+    <div id="portfolioContainer" class="container pt-1">
+      <h1 id="portfolio" class="display-4 text-center my-5 text-muted">
+        Portfolio
+      </h1>
+      <div id="projectContainer" class="row"></div>
     </div>
-  </div>
-  <!-- /Jumbotron -->
+    <!-- /Portfolio -->
 
-  <!--about-->
-  <div class="container pt-0">
-    <div id="about" class="row">
-      <div class="col-lg order-lg-2">
-        <h3 class="mb-3 mt-4">About Me</h3>
+    <!-- Social and Contact -->
 
-        <p>My name is Tim Lukens. I am a Full Stack Javascript Developer with a passion for mobile responsive web design, APIs, and databases.</p>
-        <p>I am always learning and enjoy finding answers to problems. I am a strong problem solver, and a hard worker.</p>
-        <p>Please enjoy my portfolio. There are plenty more projects and ideas soon to come!</p>
-      </div>
-      <div class="col-lg order-lg-1">
-        <h3 class="mb-3 mt-4">Current Skills:</h3>
-        <div class="list-group">
-          <ul class="list-group" id="currentLanguages">
-          </ul>
+    <div class="container socialContainer pt-1 text-center mt-2 mb-4">
+      <h1 id="contact" class="display-4 text-center text-muted">
+        Social and Contact
+      </h1>
+      <div id="contact-social" class="row">
+        <div class="col-lg">
+          <h3>
+            <a
+              href="https://docs.google.com/document/d/1hBN8TynDiwnuSZ589jGPE-2AAiTGfF0cwhdkHKnKhok/export?format=pdf"
+              class="btn btn-social"
+              target="_top"
+              ><i class="far fa-file-pdf"></i> Resume</a
+            >
+            <a
+              href="mailto:tblukens87@gmail.com"
+              class="btn btn-social"
+              target="_top"
+              ><i class="fa fa-envelope" aria-hidden="true"></i> Email</a
+            >
+            <a
+              href="https://github.com/tblukens"
+              class="btn btn-social"
+              target="_blank"
+              ><i class="fab fa-github"></i> Github</a
+            >
+            <a
+              href="https://www.linkedin.com/in/tim-lukens/"
+              class="btn btn-social"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i> Linkedin</a
+            >
+          </h3>
         </div>
       </div>
-      <div class="col-lg order-lg-3">
-        <h3 class="mb-3 mt-4">Learning Skills:</h3>
-        <div class="list-group">
-          <ul class="list-group" id="learningLanguages">
-          </ul>
-        </div>
-      </div>
     </div>
-  </div>
-  <!--/about-->
+    <!--/about-->
+    <!-- /Social and Contact -->
 
-  <!-- Portfolio -->
-  <div id="portfolioContainer" class="container pt-1">
-    <h1 id="portfolio" class="display-4 text-center my-5 text-muted">Portfolio</h1>
-    <div id="projectContainer" class="row">
-    </div>
-  </div>
-  <!-- /Portfolio -->
+    <!-- footer -->
 
-  <!-- Social and Contact -->
-
-  <div class="container socialContainer pt-1 text-center mt-2 mb-4">
-  <h1 id="contact" class="display-4 text-center text-muted">Social and Contact</h1>
-    <div id="contact-social" class="row">
-      <div class="col-lg">
-        <h3>
-          <a href="https://docs.google.com/document/d/1hBN8TynDiwnuSZ589jGPE-2AAiTGfF0cwhdkHKnKhok/export?format=pdf" class="btn btn-social" target="_top"><i class="far fa-file-pdf"></i>
-            Resume</a>
-          <a href="mailto:tblukens87@gmail.com" class="btn btn-social" target="_top"><i class="fa fa-envelope"
-              aria-hidden="true"></i> Email</a>
-          <a href="https://github.com/tblukens" class="btn btn-social" target="_blank"><i class="fab fa-github"></i>
-            Github</a>
-          <a href="https://twitter.com/Shaztimwind" class="btn btn-social" target="_blank"><i class="fab fa-twitter"></i>
-            Twitter</a>
-          <a href="https://www.linkedin.com/in/tim-lukens/" class="btn btn-social" target="_blank"><i class="fab fa-linkedin"></i>
-            Linkedin</a></h3>
-      </div>
-    </div>
-  </div>
-  <!--/about-->
-  <!-- /Social and Contact -->
-
-
-  <!-- footer -->
-
-  <div class="container footerContainer pt-1">
-    <div class="row py-1 footer">
-      <!-- <div class="col-md-7">
+    <div class="container footerContainer pt-1">
+      <div class="row py-1 footer">
+        <!-- <div class="col-md-7">
         <div class="btn-group d-flex align-items-stretch align-self-md-stretch" role="group">
 
         </div>
       </div> -->
-      <div class="col-md text-right align-self-md-stretch">
-        <small>&copy; 2018 Tim Lukens</small>
+        <div class="col-md text-right align-self-md-stretch">
+          <small>&copy; 2018 Tim Lukens</small>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- /footer -->
+    <!-- /footer -->
 
-  <!-- jquery and bootstrap -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js" integrity="sha384-VspmFJ2uqRrKr3en+IG0cIq1Cl/v/PHneDw6SQZYgrcr8ZZmZoQ3zhuGfMnSR/F2"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
-    crossorigin="anonymous"></script>
-  <!-- /jquery and bootstrap -->
-  <!-- Personal jQuery -->
-  <script src="js/skills.js"></script>
-  <script src="js/projects.js"></script>
-  <script src="js/me.js"></script>
-</body>
-
+    <!-- jquery and bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js"
+      integrity="sha384-VspmFJ2uqRrKr3en+IG0cIq1Cl/v/PHneDw6SQZYgrcr8ZZmZoQ3zhuGfMnSR/F2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+      integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- /jquery and bootstrap -->
+    <!-- Personal jQuery -->
+    <script src="js/skills.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/me.js"></script>
+  </body>
 </html>
