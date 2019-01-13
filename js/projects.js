@@ -126,5 +126,15 @@ var projects = [
       'App using Cheerio to scrape website data from PCGAMER news to save into a mongo database then allow users to set notes and view articles.',
     webApp: 'heroku',
     herokuLink: 'https://secure-thicket-49434.herokuapp.com/'
+  },
+  {
+    name: 'Google Books Search',
+    gitHub: 'NYT-book-search',
+    imgLink: './img/google_search.png',
+    madeWith: 'React, Node, Express, Axios, MongoDB, Mongoose',
+    shortDescription:
+      'App using Google Books search API to find books. Users can then save the books to a database to view for later.',
+    webApp: 'heroku',
+    herokuLink: 'https://tbl-google-books.herokuapp.com/'
   }
 ];
