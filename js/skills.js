@@ -11,4 +11,4 @@ var currentLanguages = [
   'Vue'
 ];
 
-var learningLanguages = ['PHP', 'Java'];
+var learningLanguages = ['C#', 'Python'];
